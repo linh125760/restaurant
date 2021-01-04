@@ -1,0 +1,75 @@
+@media only screen and (max-width: 1023px) {
+    /* Màn hình điện thoại -> Nhỏ hơn 740px */
+    body {
+        overflow-x: hidden;
+    }
+    .header-menu {
+        display: none;
+        background-color: pink;
+    }
+    .header-menu ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #counter {
+        visibility: hidden;
+    }
+    .header-menu .logo {
+        display: none;
+    }
+    .drop {
+        width: 20%;
+        margin: 0 auto;
+    }
+    .our-story-left {
+        padding: 50px 0px;
+    }
+    .our-story-right {
+        padding: 100px 0px 50px 30px;
+    }
+    .our-story-right .content {
+        width: 80%;
+        font-size: 13px;
+        text-align: justify;
+    }
+    .our-story-right .read a {
+        margin-top: 0px;
+    }
+    .our-services__info {
+        padding: 50px 0px;
+    }
+
+    .info-1 {
+        width: 40%;
+    }
+   
+    .info-2 {
+        width: 40%;
+    }
+   
+    .info-3 {
+        width: 80%;
+        padding: 0 7.5px;
+    }
+    .about-us__content {
+        padding-left: 0px;
+    }
+    .chef {
+        width: 50%;
+        padding-right: 15px;
+    }
+    .chef-bottom .read a {
+        margin-top: 20%;
+        font-size: 15px;
+    }
+    .footer-menu {
+        padding: 60px 0px 20px 0px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #toggle {
+        display: none;
+    }
+}
