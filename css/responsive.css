@@ -1,27 +1,35 @@
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 739px) {
     /* Màn hình điện thoại -> Nhỏ hơn 740px */
-    body {
-        overflow-x: hidden;
+    .our-story {
+        flex-direction: column-reverse;
     }
-    .header-menu {
-        display: none;
-        background-color: pink;
+    .our-story-left, .our-story-right {
+        width: 100%;
+        padding: 30px;
     }
-    .header-menu ul {
-        display: block;
-        margin: 0;
+    .our-story-right .content {
+        width: 80%;
+        font-size: 15px;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    .chef-bottom .read a {
+        font-size:  10px;
+    }
+    .about-us {
         padding: 0;
     }
-    #counter {
-        visibility: hidden;
+
+    .chef {
+        width: 100%;
     }
-    .header-menu .logo {
-        display: none;
+
+    .about-us__content {
+        width: 100%;
     }
-    .drop {
-        width: 20%;
-        margin: 0 auto;
-    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
     .our-story-left {
         padding: 50px 0px;
     }
@@ -33,38 +41,64 @@
         font-size: 13px;
         text-align: justify;
     }
+    .chef-bottom .read a {
+        font-size:  12px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .about-us {
+        padding-left: 0px;
+    }
+    .header-menu {
+        display: none;
+        background-color: pink;
+    }
+    .header-menu ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
     .our-story-right .read a {
         margin-top: 0px;
     }
-    .our-services__info {
-        padding: 50px 0px;
+    #counter {
+        visibility: hidden;
     }
-
+    .header-menu .logo {
+        display: none;
+    }
+    .drop {
+        width: 20%;
+        margin: 0 auto;
+    }
     .info-1 {
         width: 40%;
     }
-   
     .info-2 {
         width: 40%;
     }
-   
     .info-3 {
         width: 80%;
         padding: 0 7.5px;
     }
+    .our-services__info {
+        padding: 50px 0px;
+    }
     .about-us__content {
         padding-left: 0px;
     }
-    .chef {
-        width: 50%;
-        padding-right: 15px;
-    }
-    .chef-bottom .read a {
-        margin-top: 20%;
-        font-size: 15px;
-    }
+   
     .footer-menu {
         padding: 60px 0px 20px 0px;
+    }
+    .form_contact {
+        position: static;
+        /* Cho position mặc định để đẩy form xuống */
     }
 }
 
