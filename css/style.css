@@ -168,8 +168,8 @@
      bottom: 40px;
      color: white;
      z-index: 100;
-    font-size: 15px;
-    margin-left: 49.4%;
+     font-size: 15px;
+     margin-left: 49.4%;
  }
 
  /* Our story  */
@@ -181,8 +181,8 @@
      background-repeat: no-repeat;
      /* height: 855px */
      display: flex;
+     flex-wrap: wrap;
  }
-
 
  .our-story-left {
      width: 50%;
@@ -209,7 +209,7 @@
      content: '';
      position: absolute;
      bottom: 5px;
-     width: 215px;
+     width: 30%;
      border-bottom: 2px solid #c3a281;
  }
 
@@ -237,38 +237,34 @@
      background-color: #000;
      color: #c3a281;
  }
+
  /* End Our Story  */
 
- 
  /* Tabs__slider */
 
  .tabs__slider {
-    height: 800px;
-    background-image: url("../images/banner__silde.png");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
+     background-image: url("../images/banner__silde.png");
+     background-size: cover;
+     display: flex;
+     align-items: center;
+ }
 
-.tabs__title {
-    background: transparent;
-    width: 450px;
-    font-size: 20px;
-    background-color: transparent;
-}
-
-.tabs__title a {
-    background-color: transparent;
-    color: #000;
-}
+ .tabs__title a {
+     background-color: transparent;
+     color: #000;
+ }
 
  .item__active {
      border-bottom: 2px solid #c3a281;
  }
 
+ .tab-content {
+     padding: 50px 0px;
+ }
+
  .slider__content {
-     height: 600px;
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
  }
 
@@ -285,41 +281,56 @@
      color: #fff;
  }
 
- .slider__button button:hover  {
-     padding: 70px 15px ;
+ .slider__button button:hover {
+     padding: 70px 15px;
      color: #c3a281;
-     transition: 0.3s;
+     transition: 0.8s;
  }
 
- .slider__content__left,
- .slider__content__right {
-     width: 49%;
+ .slider__content__left, .slider__content__right {
+     width: 50%;
+ }
+
+ .slider__content__left {
      display: flex;
-     justify-content: space-between;
      flex-wrap: wrap;
+     justify-content: space-between;
  }
 
- .slider__content__left img {
-     width: 48%;
-     height: 48%;
+ .item-slider {
+     width: 50%;
  }
 
- .slider__content__left img:nth-child(3), 
- .slider__content__left img:nth-child(4) {
-     margin-top:22px;
+ /* Set hình ảnh không bị vỡ bố cục  */
+
+ .item-slider-image {
+     position: relative;
+     width: 100%;
+     height: 0;
+     padding-top: 100%;
+ }
+
+ .item-slider-image img {
+     position: absolute;
+     left: 0;
+     top: 0;
+     object-fit: cover;
+     width: 100%;
+     padding: 4%;
  }
 
  .slider__content__right {
-     background-image: url("../images/picture__right.png");
-     background-size:cover;
      display: flex;
-     justify-content: center;
      text-align: center;
      color: #fff;
      flex-wrap: wrap;
-     padding-top: 200px;
  }
- 
+
+ .right-item {
+     width: 100%;
+     padding: 2%;
+ }
+
  .slider__content__right button {
      background-color: #c3a281;
      border: none;
@@ -344,9 +355,9 @@
      text-decoration: none;
      color: #fff;
      padding: 10px 20px;
-     background-color :#c3a281 ;
+     background-color: #c3a281;
      transition: 0.5s;
-    }
+ }
 
  .slider__content__right a:hover {
      color: #c3a281;
@@ -376,7 +387,7 @@
  }
 
  .our-services__title hr {
-     width: 450px;
+     width: 50%;
      height: 1px;
  }
 
@@ -385,6 +396,17 @@
      padding-left: 150px;
      flex-wrap: wrap;
      justify-content: center;
+ }
+
+ .info-1 {
+     width: 25%;
+     padding: 0px 7.5px;
+ }
+
+ .info-2 {
+     width: 25%;
+     padding: 0px 7.5px;
+     margin-top: -15px;
  }
 
  .our-services__info .img {
@@ -402,23 +424,13 @@
      width: 100%;
  }
 
- .info-1 {
-     width: 25%;
-     padding: 0px 7.5px;
- }
-
- .info-2 {
-     width: 25%;
-     padding: 0px 7.5px;
-     margin-top: -15px;
- }
-
  .info-3 {
      width: 50%;
      padding: 0 7.5px;
  }
 
  .info-3--inner {
+     width: 100%;
      height: 0;
      padding-top: 100%;
      position: relative;
@@ -468,71 +480,78 @@
  .about-us {
      background-image: url('../images/about__us.png');
      background-size: cover;
-     height: 730px;
- }
-
- .about-us__content {
      display: flex;
+     flex-wrap: wrap;
      padding-left: 150px;
-     padding-top: 70px;
  }
 
  .chef {
-     width: 27%;
-     padding-right: 15px;
+     width: 50%;
+     display: flex;
+     padding-left: 50px;
  }
 
- .chef img {
-     height: 450px;
+ .chef-detail {
+     width: 50%;
+     padding: 20px 10px 20px 10px;
+ }
+
+ .chef .image-chef {
+     position: relative;
      width: 100%;
+     height: 0;
+     padding-top: 150%;
  }
 
  .chef-bottom {
-     height: 115px;
-     background-color: #c3a281;
- }
+    background-color: #c3a281;
+}
 
  .chef-bottom .read {
      display: flex;
      justify-content: center;
+     padding: 20px 0px;
  }
 
  .chef-bottom .read a {
-     margin-top: 30px;
-     display: inline-block;
-     font-size: 18px;
-     color: white;
-     line-height: 44px;
-     padding: 0 25px;
-     background-color: #c3a281;
-     border: 2px solid white;
-     text-transform: uppercase;
-     transition: all 0.9s ease;
- }
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    line-height: 44px;
+    padding: 0 25px;
+    background-color: #c3a281;
+    border: 2px solid white;
+    text-transform: uppercase;
+    transition: all 0.9s ease;
+}
 
- .chef-bottom .read a:hover {
-     text-decoration: none;
-     background-color: #000;
-     color: #c3a281;
- }
-
- .about-us__main {
-     width: 46%;
- }
-
- .about-us__main img {
+.chef-bottom .read a:hover {
+    text-decoration: none;
+    background-color: #000;
+    color: #c3a281;
+}
+ .chef .image-chef img {
+     position: absolute;
+     left: 0;
+     top: 0;
+     object-fit: cover;
      width: 100%;
-     height: 385px;
+     height: 100%;
+ }
+
+ .about-us__content {
+     width: 50%;
  }
 
  .about-us-title {
-     height: 165px;
-     margin-bottom: 15px;
-     width: 400px;
-     padding-top: 40px;
-     color: white;
- }
+    padding-top: 40px;
+    color: white;
+}
 
+.about-us__content img {
+    width: 100%;
+    padding: 20px;
+}
  .about-us-title h2 {
      font-size: 35px;
      color: #c3a281;
@@ -620,7 +639,7 @@
      background-image: url('../images/footer.png');
      background-size: cover;
      background-repeat: no-repeat;
-    padding: 50px 0px   ;
+     padding: 50px 0px;
      position: relative;
      z-index: -1;
  }
@@ -695,3 +714,5 @@
      color: #bdbcbc !important;
      font-size: small;
  }
+
+ /* FIGMA logo export 2x, icon -> SVG */
