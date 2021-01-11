@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Restaurant</title>
 </head>
 
@@ -51,7 +52,7 @@
             <div class="slider-content">
                 <div class="container">
                     <div class="slider-inner">
-                        <img src="images/img-text.png" />
+                        <img src="images/img-text.png" class="animate__animated  animate__tada wow" data-wow-duration="2s" />
                         <div class="slider-action">
                             <a href="#">Read more +</a>
                             <a href="#">Buy now ></a>
@@ -73,21 +74,25 @@
         <!-- Our Story -->
         <div class="our-story">
             <div class="our-story-left">
-                <img src="images/our__story__banner.png">
+                <img src="images/our__story__banner.png" class="animate__animated animate__fadeInLeftBig wow" data-wow-duration="1s">
             </div>
             <div class="our-story-right">
-                <h2>OUR STORY</h2>
-                <div class="content">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam hic dolorum voluptate eius
-                        reiciendis non! Voluptatibus hic quod quae commodi accusamus amet dolorem ullam? Delectus quidem
-                        nisi veritatis praesentium consequuntur?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sunt debitis, porro ex
-                        quibusdam illo culpa atque possimus saepe rem quis soluta ut, facere architecto. Fugiat, vitae
-                        necessitatibus! In, suscipit.</p>
-                </div>
+                <div class="animate__animated animate__fadeInRightBig wow" data-wow-duration="1s">
+                    <h2>OUR STORY</h2>
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam hic dolorum voluptate eius
+                            reiciendis non! Voluptatibus hic quod quae commodi accusamus amet dolorem ullam? Delectus
+                            quidem
+                            nisi veritatis praesentium consequuntur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sunt debitis, porro ex
+                            quibusdam illo culpa atque possimus saepe rem quis soluta ut, facere architecto. Fugiat,
+                            vitae
+                            necessitatibus! In, suscipit.</p>
+                    </div>
 
-                <div class="read">
-                    <a href="#">Read more +</a>
+                    <div class="read">
+                        <a href="#">Read more +</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,22 +160,21 @@
             <div class="our-services__info">
                 <div class="info-1">
                     <div class="img">
-                        <img src="images/our__services__items__1.png" alt="">
+                        <img src="images/our__services__items__1.png" alt="" class="animate__animated animate__fadeInTopLeft wow">
                     </div>
-                    <div class="info-text">
+                    <div class="info-text animate__animated animate__fadeInBottomLeft wow">
                     </div>
                 </div>
                 <div class="info-2">
-                    <div class="info-text">
+                    <div class="info-text animate__animated animate__fadeInTopRight wow">
                     </div>
                     <div class="img">
-                        <img src="images/our__services__items__1.png" alt="">
-
+                        <img src="images/our__services__items__1.png" alt="" class="animate__animated animate__fadeInBottomRight wow">
                     </div>
                 </div>
                 <div class="info-3">
                     <div class="info-3--inner">
-                        <img src="images/our__services__picture.png" class="image" alt="">
+                        <img src="images/our__services__picture.png" class="image animate__animated animate__lightSpeedInRight wow" alt="">
                         <div class="overlay">
                             <h2>LOREM</h2>
                         </div>
@@ -205,12 +209,15 @@
                 </div>
             </div>
             <div class="about-us__content">
+
                 <div class="about-us-title">
                     <h2>ABOUT US </h2>
                     <p>Lorem ispum dolor sit anet, consecnti adjustion edit, sed do container temper adhis labore at
                         adjecysu dolore</p>
+                    <div class="image-ab">
+                        <img src="images/top__picture.png" alt="">
+                    </div>
                 </div>
-                <img src="images/top__picture.png" alt="">
             </div>
         </div>
         <!-- End About Us -->
@@ -308,6 +315,12 @@
         </footer>
     </div>
 
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW({
+        }).init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
