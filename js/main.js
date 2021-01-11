@@ -31,3 +31,10 @@ $(document).ready(function () {
     $('.header-menu').slideToggle(400);
   });
 });
+
+$(document).ready(function () {
+  $(".drop").click(function () {
+    $(".slider-inner").toggle();
+
+  })
+})
